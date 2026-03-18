@@ -1,0 +1,31 @@
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes corTitulo {
+  0% {
+    color: white;
+  }
+  50% {
+    color: rgb(156, 156, 156);
+  }
+  100% {
+    color: black;
+  }
+}
+
+.introducao h1 {
+  position: relative;
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  color: white;
+  animation: corTitulo 8s ease infinite;
+  width: 80%;
+  text-align: center;
+}

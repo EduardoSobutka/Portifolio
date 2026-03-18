@@ -1,0 +1,74 @@
+.sobre {
+  text-align: center;
+  height: auto;
+  padding-bottom: 2%;
+}
+.sobre h1 {
+  font-size: clamp(1.8rem, 3vw, 3rem);
+}
+.sobre .informacoes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sobre .informacoes #minhaFoto {
+  height: auto;
+  width: auto;
+  border-radius: 15px;
+  box-shadow: 6px 6px 2rem rgb(147, 147, 147);
+}
+.sobre table {
+  width: 50%;
+}
+.sobre table ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+.sobre table tr td ul li img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+  animation: imagemSobe 3s ease infinite;
+  animation-delay: 1s;
+}
+
+@keyframes imagemSobe {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 2vh;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+.sobre table td {
+  font-size: clamp(1.2rem, 1.5vw, 2.5rem);
+  color: rgb(111, 111, 111);
+  padding: 15px;
+}
+.sobre table th {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+.sobre table ul li img:hover {
+  transform: scale(1.5);
+}
+
+@media (max-width: 990px) {
+  .sobre .informacoes {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .sobre table {
+    position: relative;
+    width: 100%;
+  }
+}

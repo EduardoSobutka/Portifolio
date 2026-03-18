@@ -1,0 +1,37 @@
+.jornada h1 {
+  text-align: center;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  color: white;
+}
+.jornada .mostraJornada {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.jornada ul {
+  list-style: none;
+  padding: 0;
+  width: 40%;
+  height: auto;
+}
+.jornada ul li {
+  background: linear-gradient(to bottom, #2e016c, #4206b2, #6a05e7);
+  text-align: center;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 20px 0 20px 0;
+  color: rgb(255, 255, 255);
+  font-size: clamp(1rem, 1.3vw, 2.5rem);
+  border: 5px double #ffffff;
+  box-shadow: 6px 6px 1rem rgb(45, 0, 140);
+}
+.jornada ul li h1 {
+  letter-spacing: 5px;
+  color: #ffffff;
+}
+
+@media (max-width: 750px) {
+  .jornada ul {
+    width: 80%;
+  }
+}

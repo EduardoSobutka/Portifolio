@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/introducao.css" />
+    <link rel="stylesheet" href="css/sobre.css" />
+    <link rel="stylesheet" href="css/jornada.css" />
+    <link rel="stylesheet" href="css/projetos.css" />
+    <link rel="stylesheet" href="css/contato.css" />
+    <script src="js/header.js" defer></script>
+    <title>Portifólio</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="navbar">
+        <h1>Eduardo <span>Sobutka</span></h1>
+        <div class="lista">
+          <ul>
+            <li><a class="active" href="#introducao">Introdução</a></li>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#jornada">Jornada</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="icone-lista" onclick="mostraIconeLista()">
+          <i class="bi bi-list"></i>
+        </div>
+        <div class="icone-fecha-lista" onclick="fechaLista()">
+          <i class="bi bi-x"></i>
+        </div>
+      </header>
+      <div class="menu">
+        <div class="lista-oculta">
+          <ul>
+            <li><a class="active" href="#introducao">Introdução</a></li>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#jornada">Jornada</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="introducao" class="introducao">
+        <h1>Desenvolvedor Front-end</h1>
+      </div>
+      <div id="sobre" class="sobre">
+        <h1>Sobre mim</h1>
+        <div class="informacoes">
+          <img src="img/fotoPerfil222.png" alt="" id="minhaFoto" />
+          <table>
+            <tr>
+              <td>
+                Tenho 17 anos, estou finalizando o ensino médio integrado com o
+                curso técnico de análise e desenvolvimento de sistemas, estou
+                ingressando na faculdade de engenharia de software. Gosto muito
+                de estar atento à novas tecnologias, assim como gosto de
+                trabalhar em equipe.
+              </td>
+            </tr>
+            <tr>
+              <th>Tecnologias abordadas</th>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li><img src="img/html.png" alt="" /></li>
+                  <li><img src="img/css.png" alt="" /></li>
+                  <li><img src="img/js.png" alt="" /></li>
+                  <li><img src="img/node-js.png" alt="" /></li>
+                  <li><img src="img/react.png" alt="" /></li>
+                  <li><img src="img/python.png" alt="" /></li>
+                  <li><img src="img/java.png" alt="" /></li>
+                  <li><img src="img/mysql.png" alt="" /></li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="jornada" class="jornada">
+        <h1>Jornada</h1>
+        <div class="mostraJornada">
+          <ul>
+            <li>
+              <h1>2022</h1>
+              <p>
+                Entrei no ensino médio integrado com o curso técnico de análise
+                e desenvolvimento de sistemas, onde começei a ter interesse na
+                área.
+              </p>
+            </li>
+            <br />
+            <li>
+              <h1>2023</h1>
+              <p>
+                Junto com meus colegas de turma, realizamos um projeto em
+                parceria com uma empresa de tecnologia. O projeto consistia em
+                gerenciar as férias dos funcionários.
+              </p>
+            </li>
+            <br />
+            <li>
+              <h1>2023</h1>
+              <p>
+                Participei do intensivão de JavaScript realizado pela Hashtag
+                Treinamentos.
+              </p>
+            </li>
+            <br />
+            <li>
+              <h1>2024</h1>
+              <p>
+                Começo a fazer cursos como de HTML5, CSS3 e JavaScript, buscando
+                melhorar minhas habilidades.
+              </p>
+            </li>
+            <br />
+            <li>
+              <h1>2025</h1>
+              <p>Entro na faculdade de Engenharia de software</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="projetos" class="projetos">
+        <h1>Projetos</h1>
+        <ul>
+          <li>
+            <div class="cardProjeto">
+              <img src="img/aplle-watch.png" alt="" />
+              <h2>Cópia da página de vendas do Aplle Watch.</h2>
+              <p>
+                Funcionamento na visualização das diferentes cores e tamanhos do
+                aplle Watch, utilizando JavaScript.
+              </p>
+              <button class="btnvisualizacao">
+                <a
+                  href="https://eduardosobutka.github.io/AppleWatch/"
+                  target="_blank"
+                  >Ver Projeto</a
+                >
+              </button>
+              <button class="btnrepositorio">
+                <a
+                  href="https://github.com/EduardoSobutka/AppleWatch"
+                  target="_blank"
+                  >< Repositório/></a
+                >
+              </button>
+            </div>
+          </li>
+          <li>
+            <div class="cardProjeto">
+              <img src="img/tenis-jordan3.png" alt="" />
+              <h2>Criação site de vendas de tênis.</h2>
+              <p>
+                Layout do site utilizando grid, focando apenas na organizção dos
+                elementos. Linguagens utilizadas HTML, CSS e JavaScript.
+              </p>
+              <button class="btnvisualizacao">
+                <a
+                  href="https://eduardosobutka.github.io/DinoShopp/"
+                  target="_blank"
+                  >Ver Projeto</a
+                >
+              </button>
+              <button class="btnrepositorio">
+                <a
+                  href="https://github.com/EduardoSobutka/DinoShopp"
+                  target="_blank"
+                  >< Repositório/></a
+                >
+              </button>
+            </div>
+          </li>
+          <li>
+            <div class="cardProjeto">
+              <img src="img/dom-casmurro1.png" alt="" />
+              <h2>Audio Book, 5 primeiros capítulos.</h2>
+              <p>
+                Contém os primeiros 5 capítulos do livro Dom Casmurro de Machado
+                de Assis. Linguagens utilizadas HTML, CSS e JavaScript.
+              </p>
+              <button class="btnvisualizacao">
+                <a
+                  href="https://eduardosobutka.github.io/Audio-Book/"
+                  target="_blank"
+                  >Ver Projeto</a
+                >
+              </button>
+              <button class="btnrepositorio">
+                <a
+                  href="https://github.com/EduardoSobutka/Audio-Book"
+                  target="_blank"
+                  >< Repositório/></a
+                >
+              </button>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <div class="cardProjeto">
+              <img src="img/portifolio.png" alt="" />
+              <h2>Portifólio Desenvolvedor Front-end.</h2>
+              <p>
+                Criação do portifólio, explorando e deixando a amostra minhas
+                habilidades. Linguagens utilizadas HTML, CSS e JavaScript.
+              </p>
+              <button class="btnvisualizacao">
+                <a href="#">Ver Projeto</a>
+              </button>
+              <button class="btnrepositorio">
+                <a href="https://github.com/EduardoSobutka" target="_blank"
+                  >< Repositório/></a
+                >
+              </button>
+            </div>
+          </li>
+          <li>
+            <div class="cardProjeto">
+              <img src="img/agrinhoPort.png" alt="" />
+              <h2>Central de notícias das inovações no agro.</h2>
+              <p>
+                Portal de notícias focadas em tecnologias que auxiliam o
+                agricultor a melhorar sua fonte de produção.
+              </p>
+              <button class="btnvisualizacao">
+                <a
+                  href="https://eduardosobutka.github.io/PlantWeb/"
+                  target="_blank"
+                  >Ver Projeto</a
+                >
+              </button>
+              <button class="btnrepositorio">
+                <a
+                  href="https://github.com/EduardoSobutka/PlantWeb"
+                  target="_blank"
+                  >< Repositório/></a
+                >
+              </button>
+            </div>
+          </li>
+          <li>
+            <div class="cardProjeto">
+              <img src="img/BsoftPort.png" alt="" />
+              <h2>Gerenciador de solicitação de férias.</h2>
+              <p>
+                Site onde o funcionário solicita férias, podendo escolher a data
+                assim, solicitando ao RH que aceita ou não o pedido.
+              </p>
+              <button class="btnvisualizacao">
+                <a href="">Ver Projeto</a>
+              </button>
+              <button class="btnrepositorio">
+                <a href="">< Repositório/></a>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="contato" class="contato">
+        <div class="formulario">
+          <h1>FALA <span>COMIGO</span></h1>
+          <form
+            action="mailto:eduardo.prog.sobutka@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Seu nome completo:"
+              required
+            />
+            <br />
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Seu e-mail:"
+              required
+            />
+            <br />
+            <textarea
+              name=""
+              id=""
+              placeholder="Sua mensagem"
+              required
+            ></textarea>
+            <br />
+            <div class="botoes">
+              <input type="submit" value="Enviar" class="btn-form" />
+              <input type="reset" value="Limpar" class="btn-form" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <h1>Eduardo Michel Sobutka</h1>
+        <ul>
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=100075764388090&sk=grid"
+              target="_blank"
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/sobutkaeduardo/?next=%2F&hl=pt-br"
+              target="_blank"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/EduardoSobutka" target="_blank"
+              ><i class="bi bi-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/eduardo-michel-sobutka-4b618a310/"
+              target="_blank"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
