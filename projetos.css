@@ -1,0 +1,102 @@
+.projetos h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+.projetos ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+.projetos ul li {
+  height: auto;
+  width: 30%;
+  text-align: center;
+  font-size: clamp(1.2rem, 1.3vw, 2rem);
+  border-radius: 15px;
+}
+.cardProjeto {
+  background-color: rgb(217, 217, 217);
+  width: 100%;
+  padding: 2%;
+  border-radius: 15px;
+  box-shadow: 6px 12px 2rem rgb(54, 54, 54);
+}
+.cardProjeto h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardProjeto img {
+  height: auto;
+  width: 100%;
+  background-color: rgb(111, 111, 111);
+  border-radius: 15px 15px 0 0;
+}
+.cardProjeto p {
+  color: rgb(111, 111, 111);
+  font-size: clamp(1.3rem, 1.3vw, 2.5rem);
+}
+.cardProjeto .btnvisualizacao {
+  background-color: white;
+  padding: 2%;
+  border: none;
+  border-radius: 15px;
+}
+.cardProjeto .btnvisualizacao a {
+  text-decoration: none;
+  color: black;
+  font-size: clamp(1rem, 1.3vw, 2.5rem);
+}
+
+.cardProjeto .btnvisualizacao:hover{
+  background-color: black;
+  transition: 0.5s;
+}
+.cardProjeto .btnvisualizacao a:hover{
+  color: white;
+  transition: 0.5s;
+}
+
+
+.cardProjeto .btnrepositorio {
+  background-color: black;
+  padding: 2%;
+  border: none;
+  border-radius: 15px;
+}
+
+.cardProjeto .btnrepositorio a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: clamp(1rem, 1.3vw, 2.5rem);
+}
+
+.cardProjeto .btnrepositorio:hover{
+  background-color: white;
+  transition: 0.5s;
+}
+.cardProjeto .btnrepositorio a:hover{
+  color: black;
+  transition: 0.5s;
+}
+
+
+@media (max-width: 705px) {
+  .cardProjeto .btnrepositorio {
+    margin-top: 1vh;
+  }
+}
+@media (max-width: 900px) {
+  .projetos ul {
+    display: block;
+  }
+  .projetos ul li {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    margin-top: 15px;
+  }
+}
